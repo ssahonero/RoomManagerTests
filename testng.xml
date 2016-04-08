@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Locations Tests for Room Manager">
+  <test name="Create a new Location Test">
+    <classes>
+      <class name="Locations.RoomManager.CreateLocationTest"/>
+    </classes>
+  </test>
+</suite>
