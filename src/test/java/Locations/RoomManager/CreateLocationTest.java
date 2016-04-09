@@ -51,11 +51,11 @@ public class CreateLocationTest {
 		(new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ng-binding ng-scope']")));
 		String getText = driver.findElement(By.xpath("//div[@class='ng-binding ng-scope']")).getText();
 		Assert.assertEquals(getText, "Location successfully added");
-		driver.navigate().refresh();
 	}
 	
 	@AfterClass
 	public void tearDown() {
+		driver.navigate().refresh();
 		(new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ngCellText ng-binding ng-scope'][@ng-dblclick='editLocation(row.entity)'][text()='"+ locationName +"']/parent::div/parent::div/parent::div/descendant::input[@type='checkbox'][@class='ngSelectionCheckbox']")));
 		driver.findElement(By.xpath("//div[@class='ngCellText ng-binding ng-scope'][@ng-dblclick='editLocation(row.entity)'][text()='"+ locationName +"']/parent::div/parent::div/parent::div/descendant::input[@type='checkbox'][@class='ngSelectionCheckbox']")).click();
 		(new WebDriverWait(driver, 30)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[@href='#/admin/locations'][@ui-sref='admin.locations.remove']/descendant::span[text()='Remove']")));
