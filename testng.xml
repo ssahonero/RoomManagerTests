@@ -5,4 +5,9 @@
       <class name="Locations.RoomManager.CreateLocationTest"/>
     </classes>
   </test>
+  <test name="Delete a Location Test">
+    <classes>
+      <class name="Locations.RoomManager.DeleteLocationTest"/>
+    </classes>
+  </test>
 </suite>
