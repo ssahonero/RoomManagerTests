@@ -20,4 +20,9 @@
       <class name="Locations.RoomManager.CreateLocationWithSameNameTest"/>
     </classes>
   </test>
+  <test name="Assign Location to a Conference Room Test">
+    <classes>
+      <class name="Locations.RoomManager.LocationAssignedTest"/>
+    </classes>
+  </test>
 </suite>
