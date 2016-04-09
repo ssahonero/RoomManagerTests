@@ -15,4 +15,9 @@
       <class name="Locations.RoomManager.UpdateLocationInfoTest"/>
     </classes>
   </test>
+  <test name="Create a Location with the same name Test">
+    <classes>
+      <class name="Locations.RoomManager.CreateLocationWithSameNameTest"/>
+    </classes>
+  </test>
 </suite>
